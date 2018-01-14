@@ -17,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08939503200B1CE700D493A4 /* VSACNative.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = VSACNative.entitlements; sourceTree = "<group>"; };
 		08E4EDA120017C4C005CE141 /* VSACNative.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VSACNative.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		08E4EDA420017C4C005CE141 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		08E4EDA620017C4C005CE141 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +74,7 @@
 		08E4EDA320017C4C005CE141 /* VSACNative */ = {
 			isa = PBXGroup;
 			children = (
+				08939503200B1CE700D493A4 /* VSACNative.entitlements */,
 				08E4EDA420017C4C005CE141 /* AppDelegate.swift */,
 				08E4EDA620017C4C005CE141 /* ViewController.swift */,
 				08E4EDA820017C4C005CE141 /* Main.storyboard */,
@@ -126,7 +128,12 @@
 				TargetAttributes = {
 					08E4EDA020017C4C005CE141 = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -357,12 +364,16 @@
 			baseConfigurationReference = A153EDDAA8F20E4BF2755864 /* Pods-VSACNative.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B4XFLSJ3F4;
+				CODE_SIGN_ENTITLEMENTS = VSACNative/VSACNative.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2EJYC2GJ6L;
 				INFOPLIST_FILE = VSACNative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.magenic.test.VSACNative;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyndaclass.VSACNative;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "fef9307e-2b8c-4c72-bc0e-fa3986e7dbaf";
+				PROVISIONING_PROFILE_SPECIFIER = com.lyndaclass.VSACNative.Dev;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -373,12 +384,16 @@
 			baseConfigurationReference = E336776CCF17ACC2C865C907 /* Pods-VSACNative.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = B4XFLSJ3F4;
+				CODE_SIGN_ENTITLEMENTS = VSACNative/VSACNative.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 2EJYC2GJ6L;
 				INFOPLIST_FILE = VSACNative/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.magenic.test.VSACNative;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lyndaclass.VSACNative;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "1e701a93-498d-43dc-8215-e849da9b4a6b";
+				PROVISIONING_PROFILE_SPECIFIER = com.lyndaclass.VSACNative;
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
