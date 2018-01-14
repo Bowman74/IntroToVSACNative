@@ -24,7 +24,7 @@
 		08E4EDAB20017C4C005CE141 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		08E4EDAE20017C4C005CE141 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		08E4EDB020017C4C005CE141 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		08EEF1DC200A6C800019CF44 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
+		08EEF1DC200A6C800019CF44 /* Podfile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		7C0FBD872A14A9BEE3555576 /* Pods_VSACNative.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_VSACNative.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A153EDDAA8F20E4BF2755864 /* Pods-VSACNative.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VSACNative.debug.xcconfig"; path = "Pods/Target Support Files/Pods-VSACNative/Pods-VSACNative.debug.xcconfig"; sourceTree = "<group>"; };
 		E336776CCF17ACC2C865C907 /* Pods-VSACNative.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-VSACNative.release.xcconfig"; path = "Pods/Target Support Files/Pods-VSACNative/Pods-VSACNative.release.xcconfig"; sourceTree = "<group>"; };
